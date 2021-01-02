@@ -245,6 +245,12 @@ header .row {
     opacity: 1;
 }
 
+@media (max-width: 769px)  {
+    .img-wrap {
+        margin-top: 50px;
+    }
+}
+
 /*------Contact Form Response Messages-*/
 #success,
 #failed {
