@@ -10,7 +10,7 @@
 .section-title {
     text-transform: uppercase;
     text-align: center;
-    padding-top: 20px;
+    padding-top: 50px;
 }
 
 .subtitle {
@@ -42,13 +42,6 @@ a:active {
 h3,
 h4 {
     text-align: center;
-}
-
-.image {
-    display: block;
-    width: 100%;
-    height: auto;
-    border-radius: 0.5rem;
 }
 
 body {
@@ -209,4 +202,45 @@ header .row {
 
 .bar4::after {
     max-width: 60%;
+}
+
+/*------Images-*/
+
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+}
+
+.img-wrap {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.img-text {
+    font-size: 18px;
+    padding-top: 50px;
+    text-align: center;
+    position: absolute;
+    border-radius: 0.5rem;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(29, 106, 154, 0.72);
+    color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .2s, visibility .2s;
+}
+
+.img-btn {
+    margin-top: 10px;
+}
+
+.img-wrap:hover .img-text {
+    visibility: visible;
+    opacity: 1;
 }
