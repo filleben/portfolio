@@ -263,3 +263,10 @@ header .row {
     text-align: center;
     font-size: 18rem;
 }
+
+/*-----Footer-*/
+footer {
+    border-top: 3px solid orange;
+    color: white;
+    background-color: black;
+}
