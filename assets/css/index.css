@@ -22,6 +22,11 @@
     font-size: 18px;
 }
 
+.profile-text  {
+    text-align: center;
+    margin: auto;
+}
+
 .block-divider {
     width: 150px;
     height: 5px;
@@ -204,7 +209,30 @@ header .row {
     max-width: 60%;
 }
 
+.bar5::after {
+    max-width: 90%;
+}
+
+.bar6::after {
+    max-width: 80%;
+}
+
+.bar7::after {
+    max-width: 60%;
+}
+
+.bar8::after {
+    max-width: 60%;
+}
+
+.bar9::after {
+    max-width: 60%;
+}
+
 /*------Images-*/
+.profile-pic {
+    border-radius: 0.5rem;
+}
 
 .image {
     display: block;
