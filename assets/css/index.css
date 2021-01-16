@@ -265,7 +265,7 @@ header .row {
 }
 
 .img-btn {
-    margin-top: 10px;
+    margin-top: 4px;
 }
 
 .img-wrap:hover .img-text {
@@ -276,6 +276,12 @@ header .row {
 @media (max-width: 769px)  {
     .img-wrap {
         margin-top: 50px;
+    }
+}
+
+@media (max-width: 1018px) {
+    .img-text {
+        padding-top: 5px;
     }
 }
 
