@@ -1,261 +1,369 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css">
-    <link rel="stylesheet" href="assets/css/index.css">
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"> </script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css"
+    />
+    <link rel="stylesheet" href="assets/css/index.css" />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"
+    ></script>
     <script type="text/javascript">
-        (function () {
-            emailjs.init("user_S0TdchUIrQ8Jf7LRVtCS2");
-        })();
+      ;(function () {
+        emailjs.init('user_S0TdchUIrQ8Jf7LRVtCS2')
+      })()
     </script>
     <title>Ben Fillery | Portfolio</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <!--Nav/Header-->
     <div class="wrapper">
-        <a id="home"></a>
-        <header>
-            <div class="navbar-fixed">
-                <nav>
-                    <div class="nav-wrapper">
-                        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i
-                                class="material-icons">menu</i></a>
-                        <ul class="right hide-on-med-and-down">
-                            <li><a class="hvr-sweep-to-right js-hook--home">Home</a></li>
-                            <li><a class="hvr-sweep-to-right js-hook--about">About</a></li>
-                            <li><a class="hvr-sweep-to-right js-hook--projects">Portfolio</a></li>
-                            <li><a class="hvr-sweep-to-right js-hook--contact">contact</a></li>
-                        </ul>
-                    </div>
-                </nav>
-            </div>
-
-            <ul class="sidenav text-center" id="mobile-demo">
+      <a id="home"></a>
+      <header>
+        <div class="navbar-fixed">
+          <nav>
+            <div class="nav-wrapper">
+              <a href="#" data-target="mobile-demo" class="sidenav-trigger"
+                ><i class="material-icons">menu</i></a
+              >
+              <ul class="right hide-on-med-and-down">
                 <li><a class="hvr-sweep-to-right js-hook--home">Home</a></li>
                 <li><a class="hvr-sweep-to-right js-hook--about">About</a></li>
-                <li><a class="hvr-sweep-to-right js-hook--projects">Portfolio</a></li>
-                <li><a class="hvr-sweep-to-right js-hook--contact">contact</a></li>
-            </ul>
-            <div id="outer" class="container-fluid">
-                <div id="inner" class="row">
-                    <div class="col-12 col-6">
-                        <h1 class="text-center title">Hello, I'm <strong>Ben
-                                Fillery</strong>.<br>Full-stack web developer.</h1>
-                    </div>
-                    <div class="col-12 col-6 text-center">
-                        <a class="js-hook--projects">
-                            <button class="btn waves-effect waves-dark btn_trans">View My Work
-                                <i class="material-icons right">arrow_circle_down</i>
-                            </button>
-                        </a>
-                    </div>
-                </div>
+                <li>
+                  <a class="hvr-sweep-to-right js-hook--projects">Portfolio</a>
+                </li>
+                <li>
+                  <a class="hvr-sweep-to-right js-hook--contact">contact</a>
+                </li>
+              </ul>
             </div>
-        </header>
-
-        <!--About-->
-        <a id="about"></a>
-        <div class="content">
-            <div class="col-12">
-                <h2 class="section-title">About</h2>
-                <div class="block-divider"></div>
-            </div>
-            <div class="container pb-5 pt-3">
-                <div class="row pb-3" data-aos="fade-right">
-                    <div class="col text-center">
-                        <div class="subtitle"><strong>Attractive</strong></div>
-                        <div class="text">Good looking, eye-catching sites are my priority.</div>
-                    </div>
-                    <div class="col text-center">
-                        <div class="subtitle"><strong>Responsive</strong></div>
-                        <div class="text">My sites work on any display, big or small.</div>
-                    </div>
-                    <div class="col text-center">
-                        <div class="subtitle"><strong>Convenient</strong></div>
-                        <div class="text">Clean and easy to use UX/UI.</div>
-                    </div>
-                    <div class="col text-center">
-                        <div class="subtitle"><strong>Available</strong></div>
-                        <div class="text">I am available for work right now!</div>
-                    </div>
-                </div>
-                <div class="row pb-3" data-aos="fade-left">
-                    <div class="col text-center">
-                        <img src="assets/images/profilepic.jpg" alt="profilepic" class="profile-pic">
-                    </div>
-                    <div class="col profile-text pt-3">
-                        <div class="subtitle"><strong>Who is this guy?</strong></div>
-                        <div class="text">I'm a Full-stack web developer available for work today. Based in the countryside of Shropshire, UK, I have a passion for Web Development and Formula 1.</div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12" data-aos="fade-up">
-                        <div class="subtitle text-center pb-3"><strong>Lanagues:</strong></div>
-                        <div class="graph-cont">
-                            <div class="bar bar1">HTML5:  80%</div>
-                            <div class="bar bar2">CSS3:  80%</div>
-                            <div class="bar bar3">JavaScript:  60%</div>
-                            <div class="bar bar4">Python:  60%</div>
-                        </div>
-                        <div class="subtitle text-center pb-3 pt-3"><strong>Frameworks/Libaries:</strong></div>
-                        <div class="graph-cont">
-                            <div class="bar bar5">Bootstrap:  90%</div>
-                            <div class="bar bar6">Materialize:  80%</div>
-                            <div class="bar bar7">JQuery:  60%</div>
-                            <div class="bar bar8">Flask:  60%</div>
-                            <div class="bar bar9">Django:  60%</div>
-                        </div>
-                        <div class="text text-center pt-3">Always learning. Always improving.</div>
-                        <div class="text text-center pt-3"><a href="#contact">Lets work together!</a></div>
-                    </div>
-                </div>
-            </div>
+          </nav>
         </div>
 
-        <!--Projects-->
-        <a id="projects"></a>
-        <div class="content">
-            <div class="col-12">
-                <h2 class="section-title">Projects</h2>
-                <div class="block-divider"></div>
+        <ul class="sidenav text-center" id="mobile-demo">
+          <li><a class="hvr-sweep-to-right js-hook--home">Home</a></li>
+          <li><a class="hvr-sweep-to-right js-hook--about">About</a></li>
+          <li><a class="hvr-sweep-to-right js-hook--projects">Portfolio</a></li>
+          <li><a class="hvr-sweep-to-right js-hook--contact">contact</a></li>
+        </ul>
+        <div id="outer" class="container-fluid">
+          <div id="inner" class="row">
+            <div class="col-12 col-6">
+              <h1 class="text-center title">
+                Hello, I'm <strong>Ben Fillery</strong>.<br />Full-stack web
+                developer.
+              </h1>
             </div>
-            <div class="container pb-5" data-aos="fade-up">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="img-wrap">
-                            <img src="assets/images/twrfc.jpg" alt="twrfc" class="image">
-                            <div class="img-text">Tenbury Wells RFC<br>
-                                <a href="https://github.com/filleben/TenburyWellsRFC" target="_blank">
-                                    <button class="btn waves-effect waves-dark btn_trans img-btn">Learn More
-                                        <i class="material-icons right">exit_to_app</i>
-                                    </button>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="img-wrap">
-                            <img src="assets/images/f1memgame.jpg" alt="f1memgame" class="image">
-                            <div class="img-text">F1 Memory Game<br>
-                                <a href="https://github.com/filleben/F1MemoryGame" target="_blank">
-                                    <button class="btn waves-effect waves-dark btn_trans img-btn">Learn More
-                                        <i class="material-icons right">exit_to_app</i>
-                                    </button>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="col-12 col-6 text-center">
+              <a class="js-hook--projects">
+                <button class="btn waves-effect waves-dark btn_trans">
+                  View My Work
+                  <i class="material-icons right">arrow_circle_down</i>
+                </button>
+              </a>
             </div>
-            <div class="container pb-5" data-aos="fade-up">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="img-wrap">
-                            <img src="assets/images/f1dictionary.png" alt="f1dictionary" class="image">
-                            <div class="img-text">F1 Dictionary<br>
-                                <a href="https://github.com/filleben/F1Dictionary" target="_blank">
-                                    <button class="btn waves-effect waves-dark btn_trans img-btn">Learn More
-                                        <i class="material-icons right">exit_to_app</i>
-                                    </button>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="img-wrap">
-                            <img src="assets/images/f1experiences.jpg" alt="f1experiences" class="image">
-                            <div class="img-text">F1 Experiences<br>
-                                <a href="https://github.com/filleben/F1Experiences" target="_blank">
-                                    <button class="btn waves-effect waves-dark btn_trans img-btn">Learn More
-                                        <i class="material-icons right">exit_to_app</i>
-                                    </button>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
+      </header>
 
-        <!--Contact-->
-        <a id="contact"></a>
-        <div class="content">
-            <div class="col-12">
-                <h2 class="section-title">Contact</h2>
-                <div class="block-divider"></div>
-            </div>
-            <div class="container pb-5" data-aos="fade-up">
-                <div class="row">
-                    <div class="col text-center">
-                        <div class="subtitle"><strong>Have a question or want to work together?</strong></div>
-                        <div class="text">Connect with me on <a
-                                href="https://www.linkedin.com/in/ben-fillery-225a02176/" target="_blank">LinkedIn</a>
-                            or fill out the form below.</div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div id="form" class="col-12">
-                        <form onsubmit="return sendMail(this);" class="col s12">
-                            <div class="row">
-                                <div class="input-field col s12">
-                                    <input id="name" type="text" class="validate" required>
-                                    <label for="name">Name</label>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="input-field col s12">
-                                    <input id="email" type="email" class="validate" required>
-                                    <label for="email">Email</label>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="input-field col s12">
-                                    <textarea id="message" class="materialize-textarea" required></textarea>
-                                    <label for="message">Message</label>
-                                </div>
-                            </div>
-                            <div class="text-center">
-                                <button class="btn waves-effect waves-light" type="submit" name="action">Submit
-                                    <i class="material-icons right">send</i>
-                                </button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-                <div class="row">
-                    <div id="success" class="col-12">
-                        <div class="text">Message sent successfully!<br>I'll be in touch soon!</div>
-                    </div>
-                    <div id="failed" class="col-12">
-                        <div class="text">Error Something went wrong!<br>Please refresh and try again!</div>
-                    </div>
-                </div>
-            </div>
+      <!--About-->
+      <a id="about"></a>
+      <div class="content">
+        <div class="col-12">
+          <h2 class="section-title">About</h2>
+          <div class="block-divider"></div>
         </div>
+        <div class="container pb-5 pt-3">
+          <div class="row pb-3" data-aos="fade-right">
+            <div class="col text-center">
+              <div class="subtitle"><strong>Attractive</strong></div>
+              <div class="text">
+                Good looking, eye-catching sites are my priority.
+              </div>
+            </div>
+            <div class="col text-center">
+              <div class="subtitle"><strong>Responsive</strong></div>
+              <div class="text">
+                My sites work on any display, big or small.
+              </div>
+            </div>
+            <div class="col text-center">
+              <div class="subtitle"><strong>Convenient</strong></div>
+              <div class="text">Clean and easy to use UX/UI.</div>
+            </div>
+            <div class="col text-center">
+              <div class="subtitle"><strong>Available</strong></div>
+              <div class="text">I am available for work right now!</div>
+            </div>
+          </div>
+          <div class="row pb-3" data-aos="fade-left">
+            <div class="col text-center">
+              <img
+                src="assets/images/profilepic.jpg"
+                alt="profilepic"
+                class="profile-pic"
+              />
+            </div>
+            <div class="col profile-text pt-3">
+              <div class="subtitle"><strong>Who is this guy?</strong></div>
+              <div class="text">
+                I'm a Full-stack web developer available for work today. Based
+                in the countryside of Shropshire, UK, I have a passion for Web
+                Development and Formula 1.
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12" data-aos="fade-up">
+              <div class="subtitle text-center pb-3">
+                <strong>Languages:</strong>
+              </div>
+              <div class="graph-cont">
+                <div class="bar bar1">HTML5: 80%</div>
+                <div class="bar bar2">CSS3: 80%</div>
+                <div class="bar bar3">JavaScript: 60%</div>
+                <div class="bar bar4">Python: 60%</div>
+              </div>
+              <div class="subtitle text-center pb-3 pt-3">
+                <strong>Frameworks/Libraries:</strong>
+              </div>
+              <div class="graph-cont">
+                <div class="bar bar5">Bootstrap: 90%</div>
+                <div class="bar bar6">Materialize: 80%</div>
+                <div class="bar bar7">JQuery: 60%</div>
+                <div class="bar bar8">Flask: 60%</div>
+                <div class="bar bar9">Django: 60%</div>
+              </div>
+              <div class="text text-center pt-3">
+                Always learning. Always improving.
+              </div>
+              <div class="text text-center pt-3">
+                <a href="#contact">Lets work together!</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Projects-->
+      <a id="projects"></a>
+      <div class="content">
+        <div class="col-12">
+          <h2 class="section-title">Projects</h2>
+          <div class="block-divider"></div>
+        </div>
+        <div class="container pb-5" data-aos="fade-up">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="img-wrap">
+                <img src="assets/images/twrfc.jpg" alt="twrfc" class="image" />
+                <div class="img-text">
+                  Tenbury Wells RFC<br />
+                  <a
+                    href="https://github.com/filleben/TenburyWellsRFC"
+                    target="_blank"
+                  >
+                    <button
+                      class="btn waves-effect waves-dark btn_trans img-btn"
+                    >
+                      Learn More
+                      <i class="material-icons right">exit_to_app</i>
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="img-wrap">
+                <img
+                  src="assets/images/f1memgame.jpg"
+                  alt="f1memgame"
+                  class="image"
+                />
+                <div class="img-text">
+                  F1 Memory Game<br />
+                  <a
+                    href="https://github.com/filleben/F1MemoryGame"
+                    target="_blank"
+                  >
+                    <button
+                      class="btn waves-effect waves-dark btn_trans img-btn"
+                    >
+                      Learn More
+                      <i class="material-icons right">exit_to_app</i>
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container pb-5" data-aos="fade-up">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="img-wrap">
+                <img
+                  src="assets/images/f1dictionary.png"
+                  alt="f1dictionary"
+                  class="image"
+                />
+                <div class="img-text">
+                  F1 Dictionary<br />
+                  <a
+                    href="https://github.com/filleben/F1Dictionary"
+                    target="_blank"
+                  >
+                    <button
+                      class="btn waves-effect waves-dark btn_trans img-btn"
+                    >
+                      Learn More
+                      <i class="material-icons right">exit_to_app</i>
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="img-wrap">
+                <img
+                  src="assets/images/f1experiences.jpg"
+                  alt="f1experiences"
+                  class="image"
+                />
+                <div class="img-text">
+                  F1 Experiences<br />
+                  <a
+                    href="https://github.com/filleben/F1Experiences"
+                    target="_blank"
+                  >
+                    <button
+                      class="btn waves-effect waves-dark btn_trans img-btn"
+                    >
+                      Learn More
+                      <i class="material-icons right">exit_to_app</i>
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Contact-->
+      <a id="contact"></a>
+      <div class="content">
+        <div class="col-12">
+          <h2 class="section-title">Contact</h2>
+          <div class="block-divider"></div>
+        </div>
+        <div class="container pb-5" data-aos="fade-up">
+          <div class="row">
+            <div class="col text-center">
+              <div class="subtitle">
+                <strong>Have a question or want to work together?</strong>
+              </div>
+              <div class="text">
+                Connect with me on
+                <a
+                  href="https://www.linkedin.com/in/ben-fillery-225a02176/"
+                  target="_blank"
+                  >LinkedIn</a
+                >
+                or fill out the form below.
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div id="form" class="col-12">
+              <form onsubmit="return sendMail(this);" class="col s12">
+                <div class="row">
+                  <div class="input-field col s12">
+                    <input id="name" type="text" class="validate" required />
+                    <label for="name">Name</label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="input-field col s12">
+                    <input id="email" type="email" class="validate" required />
+                    <label for="email">Email</label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="input-field col s12">
+                    <textarea
+                      id="message"
+                      class="materialize-textarea"
+                      required
+                    ></textarea>
+                    <label for="message">Message</label>
+                  </div>
+                </div>
+                <div class="text-center">
+                  <button
+                    class="btn waves-effect waves-light"
+                    type="submit"
+                    name="action"
+                  >
+                    Submit
+                    <i class="material-icons right">send</i>
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="row">
+            <div id="success" class="col-12">
+              <div class="text">
+                Message sent successfully!<br />I'll be in touch soon!
+              </div>
+            </div>
+            <div id="failed" class="col-12">
+              <div class="text">
+                Error Something went wrong!<br />Please refresh and try again!
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!--Footer-->
     <footer>
-        <div class="text-center pt-3 pb-3">&#169; Ben Fillery 2021</div>
+      <div class="text-center pt-3 pb-3">&#169; Ben Fillery 2021</div>
     </footer>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.js"
-        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"
+    ></script>
     <script src="assets/scripts/scripts.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-</body>
-
+  </body>
 </html>
